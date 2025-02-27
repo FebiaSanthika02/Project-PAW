@@ -25,7 +25,7 @@ class User extends Authenticatable
 
     /**
      * The attributes that should be hidden for serialization.
-     *
+     * 
      * @var array<int, string>
      */
     protected $hidden = [
@@ -35,7 +35,7 @@ class User extends Authenticatable
 
     /**
      * The attributes that should be cast.
-     *
+     * The project uses laravel 8
      * @var array<string, string>
      */
     protected $casts = [
@@ -50,3 +50,4 @@ class User extends Authenticatable
         return $this->hasMany(Faq::class);
     }
 }
+
